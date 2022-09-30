@@ -13,6 +13,7 @@ namespace ManipulatingString
             Console.WriteLine("String 1: "+myWords.text);
             Console.WriteLine("String 2: " + myWords.textTwo);
             Console.WriteLine("String 3: " + myWords.textThree);
+            Console.WriteLine("String 4: " + myWords.textFour);
 
             Console.WriteLine("\nThis is a Clone of string 3: " + '"' + myWords.textThree.Clone()+'"');
 
@@ -34,9 +35,11 @@ namespace ManipulatingString
 
             Console.WriteLine("\nChar array: " + myWords.text.ToCharArray());
 
-            Console.WriteLine("\nShows if String 1 is even or Odd: " + evenOdd(myWords.text));
+            Console.WriteLine("\nShows if String 1 is even or Odd: " + evenOdd());
 
-            Console.WriteLine("\nShows if String 1 is even or Odd: " + primeNum(myWords.text));
+            Console.WriteLine("\nShows if the length of String 1 is a Prime Number: " + primeNum());
+
+            Console.WriteLine("\nShows if String 4 is a Palindrome: " + palindrome());
         }
 
     }
